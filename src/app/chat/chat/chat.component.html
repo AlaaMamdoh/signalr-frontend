@@ -1,0 +1,25 @@
+<div style="padding: 15px;">
+    <header>
+        <h1 style="display: inline-block;margin-right: 30px;">{{name}} Chat</h1>
+        <input type="text" style="width: 30%; display: inline-block; margin-right: 15px;" [(ngModel)]="user_name" placeholder="your name">
+        <input type="text" style="width: 30%; display: inline-block;" [(ngModel)]="other_user" placeholder="the other connection id">
+        <button (click)="connect()">Connect</button>
+    </header>
+    <div>
+        <div #msgsContainer id="x" style="overflow-y: scroll; height: 60vh;">
+            <div  *ngFor="let msg of msgsList" [ngClass]="{'currentUserMsg': msg.current == true}">
+                <div class="msgContainer" [ngClass]="{'currentUserMsgContainer': msg.current == true}">
+                    <span *ngIf="msg.current != true" style="color: #bd2b2b; font-weight: bold;">{{msg.user_name}}</span>
+                    <p style="margin: 0;">{{msg.value}}</p>
+                </div>
+            </div>
+        </div>
+        
+        <form (submit)="sendNewMsg()">
+            <input type="text" [(ngModel)]="written_msg" [ngModelOptions]="{standalone: true}" placeholder="Write a msg ...">
+            <button type="submit" (keyup.enter)="sendNewMsg()">Send</button>
+            <!-- (click)="sendNewMsg()" -->
+        </form>
+        
+    </div>
+</div>

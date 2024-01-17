@@ -1,0 +1,23 @@
+input{
+    width: 100%;
+    padding: 10px 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.msgContainer{
+    background-color: #fff;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 5px 15px;
+    margin-bottom: 5px;
+    max-width: 800px;
+    display: inline-block;
+}
+.currentUserMsgContainer{
+    background-color: #ebbbbb;
+    border: 1px solid #9b6969;
+    color: #5e0f0f;
+}
+.currentUserMsg{
+    text-align: right;
+}

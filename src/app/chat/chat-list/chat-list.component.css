@@ -1,0 +1,22 @@
+.chat_photo{
+    width: 50px;
+    display: inline-block;
+    height: 44px;
+    background-color: #b36b6b;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 29px;
+    color: #f1e9d3;
+    padding-top: 3px;
+    margin-right: 10px;
+}
+.chat_container{
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+.chat_container:hover{
+    background-color: #f1e9d3;
+}

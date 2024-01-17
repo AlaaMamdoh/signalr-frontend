@@ -1,0 +1,21 @@
+<div style="padding: 15px;">
+    <header>
+        <h1>Chat List</h1>
+    </header>
+    <div>
+        <div class="chat_container" (click)="navigate('/chat/x')">
+            <span class="chat_photo">x</span>
+            <span>group chat X</span>
+        </div>
+
+        <div class="chat_container" (click)="navigate('/chat/z')">
+            <span class="chat_photo" style="background-color: #6bb37c;">z</span>
+            <span>group chat Z</span>
+        </div>
+
+        <div class="chat_container" (click)="navigate('/chat/s')">
+            <span class="chat_photo" style="background-color: #6b7fb3;">s</span>
+            <span>single chat S</span>
+        </div>
+    </div>
+</div>
